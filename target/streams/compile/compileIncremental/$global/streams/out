@@ -1,0 +1,31 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/Users/jono/projects/mechz/src/main/scala/main.scala, /Users/jono/projects/mechz/src/main/scala/domain/Action.scala, /Users/jono/projects/mechz/src/main/scala/domain/Hero.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/jono/projects/mechz/src/main/scala/main.scala, /Users/jono/projects/mechz/src/main/scala/domain/Action.scala, /Users/jono/projects/mechz/src/main/scala/domain/Hero.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/jono/projects/mechz/src/main/scala/main.scala, /Users/jono/projects/mechz/src/main/scala/domain/Action.scala, /Users/jono/projects/mechz/src/main/scala/domain/Hero.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 3 sources: invalidated sources (3) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 3 Scala sources to /Users/jono/projects/mechz/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 75bfacb2, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes:/Users/jono/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/jono/projects/mechz/target/scala-2.11/classes:/Users/jono/.ivy2/cache/org.scalaz/scalaz-core_2.11/bundles/scalaz-core_2.11-7.1.5.jar:/Users/jono/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/jono/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.5.jar[0m
+[0m[[31merror[0m] [0m/Users/jono/projects/mechz/src/main/scala/main.scala:14: too many arguments for method fight: (heroes: domain.HeroPair)domain.FightResultPair[0m
+[0m[[31merror[0m] [0m    val result = fight(jono, neopy)[0m
+[0m[[31merror[0m] [0m                      ^[0m
+[0m[[31merror[0m] [0mone error found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) Compilation failed[0m
