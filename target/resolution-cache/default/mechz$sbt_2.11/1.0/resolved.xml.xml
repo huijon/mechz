@@ -4,7 +4,7 @@
 		module="mechz$sbt_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20170213235715"
+		publication="20170220223707"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

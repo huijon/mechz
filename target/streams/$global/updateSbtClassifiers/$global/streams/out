@@ -703,9 +703,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.8!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
-[debug] :: resolution report :: resolve 336ms :: artifacts dl 15ms
+[debug] :: resolution report :: resolve 330ms :: artifacts dl 38ms
 [debug] 	report for default#mechz$sbt_2.11;1.0 default produced in /Users/jono/projects/mechz/target/resolution-cache/reports/default-mechz$sbt_2.11-default.xml
-[debug] 	resolve done (336ms resolve - 15ms download)
+[debug] 	resolve done (330ms resolve - 38ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#mechz$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -1069,6 +1069,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.8!precompiled-2_8_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.8!precompiled-2_9_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.8!precompiled-2_9_3.jar(src)
-[debug] :: resolution report :: resolve 69ms :: artifacts dl 48ms
+[debug] :: resolution report :: resolve 84ms :: artifacts dl 17ms
 [debug] 	report for default#mechz$sources_2.11;1.0 default produced in /Users/jono/projects/mechz/target/resolution-cache/reports/default-mechz$sources_2.11-default.xml
-[debug] 	resolve done (69ms resolve - 48ms download)
+[debug] 	resolve done (84ms resolve - 17ms download)

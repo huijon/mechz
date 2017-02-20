@@ -1,13 +1,41 @@
+import java.util.concurrent.Executors
+
+import controllers.{GameController, GameService}
 import domain._
+import org.http4s._
+import org.http4s.server.Router
+import org.http4s.server.blaze.BlazeBuilder
+import com.typesafe.scalalogging.LazyLogging
+import services.GameService
 
-import scalaz._, Scalaz._
+import scalaz._
+import Scalaz._
 
-/**
- * Created by jono on 13/02/17.
- */
-
-object Mechz {
+object Mechz extends LazyLogging {
   def main(args: Array[String]): Unit = {
+    implicit val es = Executors.newFixedThreadPool(10)
+    val port = 8080
+    val host = "localhost"
+
+    val gameService = GameService()
+    val gameController = GameController(gameService)
+    val backendService: HttpService = Router(
+      "/game" -> gameController.service
+    )
+
+    println(s"Cammy-recurly started on $host://$port")
+
+    BlazeBuilder
+      .bindHttp(port, host)
+      .mountService(backendService, "/")
+      .withServiceExecutor(es)
+      .enableHttp2(true)
+      .withNio2(true)
+      .run
+      .awaitShutdown()
+  }
+
+  def runSomeFights() = {
     println("Start mechz")
     val jono = Warrior("NiMR0d")
     val neopy = Hunter("Neopy")
@@ -65,7 +93,11 @@ object Mechz {
         fightInteractive(endResult.fhp, rounds :+ endResult.fhp.toRoundHeroPair)
     }
   }
+
+
 }
+
+
 
 
 
